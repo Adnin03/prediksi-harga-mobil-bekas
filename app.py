@@ -253,18 +253,18 @@ with col2:
         """, unsafe_allow_html=True)
 
 
-# ── Tips ──────────────────────────────────────────────────────────────────────
-st.markdown("---")
-with st.expander("💡 Tips: Cara mendapatkan Brand_Freq & model_Freq yang akurat"):
-    st.markdown("""
-    Nilai frequency encoding di `app.py` harus **sama persis** dengan yang dipakai saat training.
-    Jalankan cell ini di notebook untuk mendapatkan nilainya:
+# # ── Tips ──────────────────────────────────────────────────────────────────────
+# st.markdown("---")
+# with st.expander("💡 Tips: Cara mendapatkan Brand_Freq & model_Freq yang akurat"):
+#     st.markdown("""
+#     Nilai frequency encoding di `app.py` harus **sama persis** dengan yang dipakai saat training.
+#     Jalankan cell ini di notebook untuk mendapatkan nilainya:
 
-    ```python
-    # Salin output ini ke BRAND_FREQ dan MODEL_FREQ di app.py
-    print("BRAND_FREQ =", df['Brand'].value_counts(normalize=True).to_dict())
-    print("MODEL_FREQ =", df['model'].value_counts(normalize=True).to_dict())
-    ```
+#     ```python
+#     # Salin output ini ke BRAND_FREQ dan MODEL_FREQ di app.py
+#     print("BRAND_FREQ =", df['Brand'].value_counts(normalize=True).to_dict())
+#     print("MODEL_FREQ =", df['model'].value_counts(normalize=True).to_dict())
+#     ```
 
-    Lalu ganti dictionary `BRAND_FREQ` dan `MODEL_FREQ` di bagian atas `app.py`.
-    """)
+#     Lalu ganti dictionary `BRAND_FREQ` dan `MODEL_FREQ` di bagian atas `app.py`.
+#     """)
